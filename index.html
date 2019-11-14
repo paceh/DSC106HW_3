@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Internal stylesheet import -->
+        <link rel="stylesheet" href="main.css">
+        <!-- External Script -->
+        <script src="https://code.highcharts.com/css/highcharts.css"></script>
+        <title>Springfield Energy</title>
+    </head>
+    <body>
+        <!-- Page header table -->
+        <table class="simpletable" border="0">
+            <tr>
+                <td width="5%"><img src="assets/springfieldenergy.png" alt="Springfield Energy" class="pageLogo" height="50px"></td>
+                <td><h1>Springfield Energy</h1></td>
+            </tr>
+        </table>
+        <!-- Chart placement table -->
+        <table class="simpleTable greaterArea" border="0">
+            <tr>
+              <td rowspan="2" id="sharedGrid"></td>
+              <td id="legendGrid"><table border="0">
+                <tbody border="0">
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td><strong>Power</strong></td>
+                    <td><strong>Contribution</strong></td>
+                    <td><strong>Av.Value</strong></td>
+                  </tr>
+                  <tr>
+                    <td class="bolded"><strong>Sources</strong></td>
+                    <td id="totalSrc" class="bolded"></td>
+                    <td></td>
+                    <td id="price" class="bolded"></td>
+                  </tr>
+                  <tr>
+                    <td id="wind">Wind</td>
+                    <td id="windPower">?</td>
+                    <td id="windContr">?</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td id="hydro">Hydro</td>
+                    <td id="hydroPower">?</td>
+                    <td id="hydroContr">?</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td id = "gas">Gas (CCGT)</td>
+                    <td id = "gasPower">?</td>
+                    <td id = "gasContr">?</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td id = "dist">Distillate</td>
+                    <td id = "distPower">?</td>
+                    <td id = "distContr">?</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td id = "coal">Black Coal</td>
+                    <td id = "coalPower">?</td>
+                    <td id = "coalContr">?</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                    <tr>
+                    <td class="bolded"><strong>Loads</strong></td>
+                    <td id="totalLoad" class="bolded"></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id = "exports">Exports</td>
+                    <td id = "exportsPower">?</td>
+                    <td id = "exportsContr">?</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td id = "pumps">Pumps</td>
+                    <td id = "pumpsPower">?</td>
+                    <td id = "pumpsContr">?</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class = "bolded"><strong>Net</strong></td>
+                    <td id = "total" class="bolded">?</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class = "bolded"><strong>Renewables</strong></td>
+                    <td>&nbsp;</td>
+                    <td id = "renewables" class="bolded"></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table></td>
+            </tr>
+            <tr>
+                <td id="pie">
+                  <button id="makeBar">Bar</button>
+                  <button id="makePie">Pie</button>
+                  <div id="pieContainer"></div>
+                </td>
+            </tr>
+        </table>
+        <!-- External imports begin -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>  
+        <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>  
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <!-- External imports end -->
+
+        <!-- Internal imports begin -->
+        <script src="main.js"></script>
+        <!-- Internal imports end -->
+    </body>
+</html>
